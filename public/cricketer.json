@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "Steve Smith",
+    "country": "Australia",
+    "type": "All-rounder",
+    "batting_hand": "Right-hand-bat",
+    "bowling_style": "Right-off-spin",
+    "price": "$1,200,000",
+    "image": "https://i.ibb.co.com/7QsHKTf/gettyimages-621409764-612x612.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Virat Kholi",
+    "country": "India",
+    "type": "All-rounder",
+    "batting_hand": "Right-hand-bat",
+    "bowling_style": "Right-off-spin",
+    "price": "$900,000",
+    "image": "https://i.ibb.co.com/b2PKMWQ/gettyimages-1440456673-612x612.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Ben Stokes",
+    "country": "England",
+    "type": "All-rounder",
+    "batting_hand": "left-hand-bat",
+    "bowling_style": "Right-arm-fast",
+    "price": "$800,000",
+    "image": "https://i.ibb.co.com/52pfMFJ/gettyimages-1441267357-612x612.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Brendon McCullum",
+    "country": "New Zealand",
+    "type": "Batsman",
+    "batting_hand": "Right-hand-bat",
+    "bowling_style": "Right-off-spin",
+    "price": "$1.0M",
+    "image": "https://i.ibb.co.com/b1t5gr5/gettyimages-511336472-612x612.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Cris Gayel",
+    "country": "West Indies",
+    "type": "All-rounder",
+    "batting_hand": "Left-hand-bat",
+    "bowling_style": "Right-off-spin",
+    "price": "$1,100,000",
+    "image": "https://i.ibb.co.com/xjd4sQx/gettyimages-464292610-612x612.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Kane Willamson",
+    "country": "New Zealand",
+    "type": "Batsman",
+    "batting_hand": "Right-hand-bat",
+    "bowling_style": "Right-off-spin",
+    "price": "$750,000",
+    "image": "https://i.ibb.co.com/tD087y7/gettyimages-1435509434-612x612.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Mitchell Starc",
+    "country": "Australia",
+    "type": "Bowler",
+    "batting_hand": "Left-hand-bat",
+    "bowling_style": "left-arm-fast",
+    "price": "$1.0M",
+    "image": "https://i.ibb.co.com/h1Xv5S6/gettyimages-1449971555-612x612.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Mohammed Rezwan",
+    "country": "Pakistan",
+    "type": "Batsman",
+    "batting_hand": "Right-hand-bat",
+    "bowling_style": "Wicket-keeper",
+    "price": "$950,000",
+    "image": "https://i.ibb.co.com/Th4rK3Z/gettyimages-1440197648-612x612.jpg"
+  }
+]
