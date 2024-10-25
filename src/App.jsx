@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import Header from "./assets/components/header/header";
 import Players from "./assets/components/players/Players";
+import Footer from "./assets/components/fotter/fotter";
 
 function App() {
   const [isActiveBtn, SetIsActiveBtn] = useState({
@@ -29,6 +30,7 @@ function App() {
         isActiveBtn={isActiveBtn}
         handelIsActiveBtn={handelIsActiveBtn}
       ></Players>
+      <Footer></Footer>
     </>
   );
 }
