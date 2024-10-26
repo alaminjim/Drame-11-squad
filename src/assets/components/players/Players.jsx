@@ -2,13 +2,19 @@ import PropTypes from "prop-types";
 import { useEffect, useState } from "react";
 import Player from "../Player/Player";
 
-const Players = ({ handelIsActiveBtn, isActiveBtn }) => {
+const Players = ({
+  handelIsActiveBtn,
+  isActiveBtn,
+  handelChoosePlayer,
+  choosePlayer,
+}) => {
   const [cricketers, setCricketers] = useState([]);
   useEffect(() => {
     fetch("cricketer.json")
       .then((res) => res.json())
       .then((data) => setCricketers(data));
   }, []);
+
   return (
     <div>
       <div className="w-11/12 mx-auto pt-60 flex justify-between">
@@ -26,13 +32,18 @@ const Players = ({ handelIsActiveBtn, isActiveBtn }) => {
             onClick={() => handelIsActiveBtn("selected")}
             className={`${isActiveBtn.available ? "btn" : "btn btn-warning"}`}
           >
-            Selected (0)
+            selected: {choosePlayer.length}
           </button>
         </div>
       </div>
       <div className="grid grid-cols-3 gap-16">
         {cricketers.map((cricketer) => (
-          <Player key={cricketer.id} cricketer={cricketer}></Player>
+          <Player
+            key={cricketer.id}
+            handelChoosePlayer={handelChoosePlayer}
+            cricketer={cricketer}
+            choosePlayer={choosePlayer}
+          ></Player>
         ))}
       </div>
     </div>

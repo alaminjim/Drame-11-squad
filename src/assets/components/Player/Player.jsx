@@ -1,7 +1,8 @@
 import { MdPeopleAlt } from "react-icons/md";
 import { FaFlag } from "react-icons/fa";
+import SelectedPlayer from "../SelectedPlayer/SelectedPlayer";
 
-const Player = ({ cricketer }) => {
+const Player = ({ cricketer, handelChoosePlayer, choosePlayer }) => {
   const { image, name, country, type, batting_hand, bowling_style, price } =
     cricketer;
   return (
@@ -31,9 +32,15 @@ const Player = ({ cricketer }) => {
         </div>
         <div className="flex">
           <h1 className="pt-2">{price}</h1>
-          <button className="btn btn-warning mt-2 ml-52">Choose Player</button>
+          <button
+            onClick={() => handelChoosePlayer(cricketer)}
+            className="btn btn-warning mt-2 ml-52"
+          >
+            Choose Player
+          </button>
         </div>
       </div>
+      <SelectedPlayer choosePlayer={choosePlayer}></SelectedPlayer>
     </div>
   );
 };

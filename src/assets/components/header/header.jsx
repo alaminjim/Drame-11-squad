@@ -1,18 +1,8 @@
 import logo from "../../image/logo.png";
 import { BsCoin } from "react-icons/bs";
 import Banner from "../banner/banner";
-import { useState } from "react";
 
-const Header = () => {
-  const [coin, setCoin] = useState(0);
-
-  const handelCoin = () => {
-    if (coin === 0) {
-      setCoin(1500000);
-    } else {
-      setCoin(coin * 2);
-    }
-  };
+const Header = ({ handelCoin, coin }) => {
   return (
     <div>
       <div className="flex justify-between w-11/12 mx-auto">
