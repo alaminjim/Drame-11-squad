@@ -7,10 +7,9 @@ import Footer from "./assets/components/fotter/fotter";
 function App() {
   const [coin, setCoin] = useState(0);
 
-  const handelCoin = (cricketer) => {
+  const handelCoin = () => {
     if (coin === 0) {
       setCoin(1500000);
-      setCoin(coin - cricketer.price);
     } else {
       setCoin(coin * 2);
     }

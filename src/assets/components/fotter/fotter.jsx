@@ -1,18 +1,11 @@
-import footer from "../../image/bg-shadow.png";
 import footerLogo from "../../image/logo-footer.png";
 
 const Footer = () => {
   return (
-    <div className="pt-36">
-      <div className="absolute z-50 pl-20 pt-12">
-        <img className=" rounded-2xl" src={footer} alt="" />
-        <div className="relative">
-          <h1 className="top-0">al amin</h1>
-        </div>
-      </div>
-      <div className="pt-96">
-        <div className="h-[790px] bg-[#06091A] relative rounded-2xl">
-          <div className="pt-64 pl-[640px]">
+    <div className="pt-36 ">
+      <div className="">
+        <div className="h-[590px] bg-[#06091A] rounded-2xl">
+          <div className="pt-12 pl-[640px]">
             <img src={footerLogo} alt="" />
           </div>
           <div className="flex justify-evenly pt-20">
